@@ -44,7 +44,7 @@
             display: block;
             margin-top: 10px;
         }
-        input[type="text"], input[type="email"], textarea {
+        input, select {
             width: 100%;
             padding: 8px;
             margin-top: 5px;
@@ -73,21 +73,32 @@
 <body>
 
 <header>
-    <h1>Experiment 3</h1>
+    <h1>Car Showroom</h1>
 </header>
 
 <div class="container">
 
-    <h2>Form Section</h2>
+    <h2>Car Ownership Form</h2>
     <form action="#">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
 
-        <label for="email">Email:</label>
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="email">Email Address:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <label for="car">Select Car Model:</label>
+        <select id="car" name="car">
+            <option value="porsche">Porsche 911</option>
+            <option value="bmw">BMW M4</option>
+            <option value="audi">Audi R8</option>
+            <option value="mercedes">Mercedes-Benz AMG</option>
+        </select>
+
+        <label for="message">Additional Requests:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
 
         <input type="submit" value="Submit">
     </form>
@@ -100,30 +111,35 @@
         </video>
     </div>
 
-    <h2>Image Section</h2>
-    <img src="cars.jpg" alt="Sample Image">
+    <h2>Featured Car</h2>
+    <img src="cars.jpg" alt="Featured Car Image">
 
     <h2>Table Section</h2>
     <table>
         <tr>
-            <th>Item</th>
+            <th>Car Model</th>
             <th>Description</th>
             <th>Price</th>
         </tr>
         <tr>
-            <td>Car 1</td>
-            <td>This is car 1</td>
-            <td>$10000</td>
+            <td>Porsche 911</td>
+            <td>Luxury sports car with high performance</td>
+            <td>$120,000</td>
         </tr>
         <tr>
-            <td>Car 2</td>
-            <td>This is Car 2</td>
-            <td>$150000</td>
+            <td>BMW M4</td>
+            <td>High-performance coupe with sleek design</td>
+            <td>$80,000</td>
         </tr>
         <tr>
-            <td>Car 3</td>
-            <td>This is Car 3</td>
-            <td>$200000</td>
+            <td>Audi R8</td>
+            <td>Powerful V10 engine with modern tech</td>
+            <td>$150,000</td>
+        </tr>
+        <tr>
+            <td>Mercedes-Benz AMG</td>
+            <td>Luxury and performance combined</td>
+            <td>$130,000</td>
         </tr>
     </table>
 
@@ -131,4 +147,3 @@
 
 </body>
 </html>
-
